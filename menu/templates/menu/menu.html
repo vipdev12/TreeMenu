@@ -1,0 +1,7 @@
+{% load menu_tags %}
+
+{% draw_menu main_menu as some %}
+{% for i in some %}
+<a href="{% url 'menu' i.title %}">{{i.title}}</a>
+{% endfor %}
+
